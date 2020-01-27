@@ -1,0 +1,224 @@
+/* 
+Color palette
+#ffffff
+#f9f6f7
+#ffe8d6
+#ff971d  
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #ff971d;
+    padding: 16px;
+    position: fixed;
+    text-align: center;
+    opacity: 0.7;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+
+}
+
+
+/* Cluster */
+
+.cluster {
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 80vh;
+    width: 50%;
+    position: relative;
+}
+.cluster .cluster-text {
+    visibility: hidden;
+}
+
+.cluster:hover .cluster-text {
+    visibility: visible;
+}
+
+.cluster:hover .cluster-image {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.cluster-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.cluster-text {
+    background-color: rgba(0,0,0, 0.3);
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 8%;
+    text-align: center;
+}
+
+
+/* About */
+
+.about {
+
+}
+
+.about h1 {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.about p {
+    margin: 16px 64px;
+    text-align: justify;
+}
+
+.about-image {
+    background-image: url('../resources/caffee-about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #f9f6f7;
+    height: 40vh;
+}
+
+
+/* Localization */
+
+.localization {
+
+}
+
+.localization h1 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.map-image {
+    background-color: #f9f6f7;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin-top: 16px;
+}
+
+.contact-form {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.contact-form input {
+    display: list-item;
+    margin: 8px auto;
+    text-align: center;
+    height: 40px;
+    top: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 200;
+    width: 400px;
+}
+
+.contact-form input:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #ff971d;
+}
+
+.contact-form button {
+	box-shadow:inset 0px 31px 7px -1px #ff961d;
+	background:linear-gradient(to bottom, #ff961d 5%, #ff961d 100%);
+	background-color:#ff961d;
+	border-radius:6px;
+	border:1px solid #ffe8d6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 32px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #263666
+}
+
+.contact-form button:active {
+    position:relative;
+	top:1px;
+}
+
+.icons {
+    margin-top: 8px;
+}
+
+.icon {
+    margin-right: 8px;    
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #f9f6f7;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+
+/* popup */
+
+/* .popup {
+    background-color: #ffe8d6;
+    border: 6px solid #ff971d;
+    padding: 32px;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    z-index: 3;
+    -webkit-box-shadow: 15px 22px 11px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 22px 11px 2px rgba(0,0,0,0.75);
+    box-shadow: 15px 22px 11px 2px rgba(0,0,0,0.75);
+} */
